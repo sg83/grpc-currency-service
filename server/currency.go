@@ -1,8 +1,10 @@
 package server
 
 import (
+	"context"
+
 	"github.com/hashicorp/go-hclog"
-	pb "github.com/sg83/grpc-currency-service/server/proto"
+	pb "github.com/sg83/grpc-currency-service/proto"
 )
 
 // Define a struct that implements the CurrencyServiceServer interface

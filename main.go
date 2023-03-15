@@ -24,7 +24,7 @@ func main() {
 	pb.RegisterCurrencyServiceServer(gs, cs)
 
 	// Listen on port 50051
-	listener, err := net.Listen("tcp", ":50051")
+	listener, err := net.Listen("tcp", ":9092")
 	if err != nil {
 		log.Error("Failed to listen: %v", err)
 	}

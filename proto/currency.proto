@@ -9,10 +9,19 @@ service CurrencyService {
 }
 
 message ExchangeRateRequest {
-  string base_currency = 1;
-  string target_currency = 2;
+  Currencies base_currency = 1;
+  Currencies target_currency = 2;
 }
 
 message ExchangeRateResponse {
   double exchange_rate = 1;
+}
+
+// Enumeration to represent the allowed currencies for the API
+enum Currencies {
+  EUR=0;
+  USD=1;
+  JPY=2;
+  AUD=3;
+  GBP=4;
 }
